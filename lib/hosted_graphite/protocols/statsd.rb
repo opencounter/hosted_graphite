@@ -3,7 +3,7 @@ require 'hosted_graphite'
 require 'statsd'
 
 module HostedGraphite
-  def_delegators :statsd, :increment, :decrement, :count, :gauge, :set, :timing, :time
+  def_delegators :statsd, :increment, :decrement, :count, :gauge, :set, :timing, :time, :batch
 
   class STATSD < Statsd
     HOST = 'statsd.hostedgraphite.com'.freeze
