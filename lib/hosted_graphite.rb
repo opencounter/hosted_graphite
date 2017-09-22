@@ -1,6 +1,7 @@
 require 'forwardable'
 require 'hosted_graphite/version'
 require 'hosted_graphite/protocol'
+require 'hosted_graphite/ext/sidekiq'
 
 
 module HostedGraphite
